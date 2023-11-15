@@ -6,6 +6,7 @@ read b
 echo "Enter the choice:"
 echo "1: Addition"
 echo "2: Subtraction"
+echo "3: Multiplication"
 read input
 
 case $input in 
@@ -16,6 +17,10 @@ case $input in
 	2)
 		sub=$(($a-$b))
 		echo "Subtraction of $a-$b =" $sub
+		;;
+	3)
+		mul=$(($a*$b))
+		echo "Multiplication of $a*$b =" $mul
 		;;
 	*)
 		echo "Invaild Input!"
